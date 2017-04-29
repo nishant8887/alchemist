@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">   
+    <title>Mines</title>
+    <style>
+        * {
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: -moz-none;
+            -o-user-select: none;
+            user-select: none;
+        }
+        body {
+            overflow: hidden;
+        }
+        .block0 {
+            position: absolute;
+            border: 2px solid black;
+            border-style: outset;
+            width: 21px;
+            height: 21px;
+            text-align: center;
+            line-height: 25px;
+            font-size: 14px;
+            background-color: grey;
+        }
+        .block1 {
+            position: absolute;
+            border: 1px solid DimGray;
+            width: 23px;
+            height: 23px;
+            text-align: center;
+            line-height: 25px;
+            font-size: 14px;
+            background-color: grey;
+        }
+        .block2 {
+            position: absolute;
+            border: 2px solid black;
+            border-style: outset;
+            width: 21px;
+            height: 21px;
+            text-align: center;
+            line-height: 25px;
+            font-size: 14px;
+            background-color: grey;
+            background-image: url('flag.png');
+            background-size: 21px 21px;
+            background-repeat:no-repeat;
+        }
+        .block3 {
+            position: absolute;
+            border: 1px solid DimGray;
+            width: 23px;
+            height: 23px;
+            text-align: center;
+            line-height: 25px;
+            font-size: 14px;
+            background-color: FireBrick;
+            background-image: url('bomb.png');
+            background-size: 21px 21px;
+            background-repeat:no-repeat;
+        }
+        #playarea {
+            width: 620px;
+            height: 620px;
+            position: absolute;
+            border: 3px solid black;
+            border-style: inset;
+            left: 10px;
+            top: 10px;
+        }
+    </style>
+    <script src="main.js"></script>
+    <script src="../static/libs/jquery.js"></script>
+</head>
+    <body onload='init()'>
+        <div id="playarea"></div>
+    </body>
+</html>
