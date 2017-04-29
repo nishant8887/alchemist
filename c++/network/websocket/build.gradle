@@ -1,0 +1,7 @@
+apply plugin: 'cpp-exe'
+apply plugin: 'eclipse-cdt'
+
+binaries.all {
+	compilerArgs '-std=c++0x', '-pthread'
+	linkerArgs '-lpthread'
+}
